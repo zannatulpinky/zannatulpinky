@@ -15,17 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         val loginBtn = findViewById<Button>(R.id.button)
         val firstText = findViewById<TextView>(R.id.textView2)
-        val fragmentBtn = findViewById<Button>(R.id.fragmentBtn)
 
         loginBtn.setOnClickListener {
             val intent = Intent (this, LoginActivity::class.java)
             startActivity(intent)
         }
-
-        fragmentBtn.setOnClickListener {
-            val intent = Intent (this, FragmentActivity::class.java)
-            startActivity(intent)
-        }
-
     }
 }
